@@ -1,20 +1,73 @@
 <html>
     <head>
-        <title>MIAU</title>
+            <style>
+
+.menu1{grid-area: menu11;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  list-style: none;}
+
+  .menu2{
+    grid-area:menu22;
+    display: flex;
+    align-items:center;
+    width: 100%;
+   list-style: none;}
+
+.menu2 li,.menu1 li {margin-right: 80px;}
+
+.menu{display:grid;
+    grid-template-areas:'menu11'
+    'menu22' ;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+.especialidades {grid-area:especialidades;}
+.instalaciones{grid-area:instalaciones;}
+.maps{grid-area:maps}
+.footer{grid-area:footer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </style>
+
+        
     </head>
     <body>
-        <h1>Borras el puto amo</h1>
-        <h2>Cembo el crack</h2>
+        
 
 
 
         <!-- /* LINEA DE ARRIBA */ -->
-        <div class="lineaarriba">
-        <ul>
-            <li> (foto puntito)Clinica pamplona</li>
+        <div class="menu">
+        
+        <ul class="menu1">
+            <li> <img src="IMAGENES/punto.png" width="30">Clinica pamplona</li>
             <li>111111111</li>
 
-            <li>(foto puntito)Clinica tafalla</li>
+            <li><img src="IMAGENES/punto.png" width="30">Clinica tafalla</li>
             <li>111111111</li>
 
             <li>(facebook)</li>
@@ -22,14 +75,14 @@
             <li>instagram</li>
 
         </ul>
-        </div>
+        
 
         <hr/>
 
         <!-- /* MENU */ -->
-<div class="MENU">
-    <ul>
-        <li><img src="IMAGENES/LOGO.png" alt="LOGO"></li>
+
+    <ul class="menu2">
+        <li><img src="IMAGENES/LOGO.png" alt="LOGO" width="400"></li>
         <li><a href="link inicio">INICIO</a></li>
         <li><a href="link servicios">SERVICIOS</a></li>
         <li><a href="link equipo">EQUIPO</a></li>
@@ -38,51 +91,53 @@
         <li><a href="link LEGAL">legal</a></li>
 
     </ul>
-    </div>
-        
-
+    
+</div>
+    <div class="grid-container">
+<div class="especialidades">
         <h3>ESPECIALDIADES</h3>
         <table>
             <tr>
-                <th>LOGO DE ESPECIALIDAD</th>
+                <th>Implantología</th>
                 <th>TITULO ESPECIALIDAD</th>
                 <th>TEXTO DE ESPECIALIDAD</th>
             </tr>
             <tr>
-                <th>LOGO DE ESPECIALIDAD</th>
+                <th>cirugía oral</th>
                 <th>TITULO ESPECIALIDAD</th>
                 <th>TEXTO DE ESPECIALIDAD</th>
             </tr>
             <tr>
-                <th>LOGO DE ESPECIALIDAD</th>
+                <th>peridoncia</th>
                 <th>TITULO ESPECIALIDAD</th>
                 <th>TEXTO DE ESPECIALIDAD</th>
             </tr>
             <tr>
-                <th>LOGO DE ESPECIALIDAD</th>
+                <th>Odontología conservadora</th>
                 <th>TITULO ESPECIALIDAD</th>
                 <th>TEXTO DE ESPECIALIDAD</th>
             </tr>
             <tr>
-                <th>LOGO DE ESPECIALIDAD</th>
+                <th>estética dental</th>
                 <th>TITULO ESPECIALIDAD</th>
                 <th>TEXTO DE ESPECIALIDAD</th>
             </tr>
             <tr>
-                <th>LOGO DE ESPECIALIDAD</th>
+                <th>Odontopediatría</th>
                 <th>TITULO ESPECIALIDAD</th>
                 <th>TEXTO DE ESPECIALIDAD</th>
             </tr>
         </table>
-
+    </div>
+<div class="instalaciones">
         <h3>NUESTRAS INSTALACIONES</h3>
             <img src="link" alt="descripcion de foto">
             <img src="link" alt="descripcion de foto">
             <!-- /* CSS HACER QUE QUEDEN EN HORIZONTAL */ -->
-
+</div>
     </br>
     </br>
-
+<div class="maps">
             <table>
 
                 <tr>
@@ -115,6 +170,7 @@
                 <tr>
                     <td>LINK MAPS</td>
                 </tr>
+            </div>
                 
 
             </table>
@@ -123,9 +179,11 @@
         
     </body>
 
-
+<div class="footer">
     <footer>
         <P>todos los derechos reservados / aviso legal / cookies</P>
         <p>Diseñada por cemboelcrack y juan</p>
     </footer>
+</div>
+</div>
 </html>
