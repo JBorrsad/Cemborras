@@ -1,51 +1,82 @@
 <html>
     <head>
             <style>
-
-.menu1{grid-area: menu11;
+*{font-family:sans-serif}
+.menu1{ 
     display: flex;
     align-items: center;
     width: 100%;
-  list-style: none;}
+    list-style: none;
+font-size:13px;
+}
 
-  .menu2{
-    grid-area:menu22;
-    display: flex;
+  .menu2{display: flex;
     align-items:center;
-    width: 100%;
-   list-style: none;}
+    list-style: none;
+font-size: 16px;}
 
-.menu2 li,.menu1 li {margin-right: 80px;}
+.menu1 li:nth-child(odd){margin-right:30 ;}
+.menu1 li:nth-child(even){margin-right: 100;}
 
-.menu{display:grid;
-    grid-template-areas:'menu11'
-    'menu22' ;
-    width: 100%;
-    
+.social-media {
+    margin-left: auto; 
 }
 
 
 
+.menu2 li{margin-right: 80px;}
+
+
+.menu1 li:hover, .menu2 li:hover {background-color:rgb(192, 146, 146)}
+.menu2  li.logo:hover{ background-color: grey;}
+a{
+    color: black; 
+    text-decoration: none;
+}
+
+.menu{display:block;
+    
+    width: 100%;
+    position:fixed;top:0;
+    background-color: grey;
+    -webkit-box-shadow: 0px 0px 7px 0px black;
+    
+}
+
+.logo{ margin-left:10%;
+    width: 30%;}
+
+footer {
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+    
+}
+
+.body1{margin-top: 200;}
+
+h3{text-align: center;}
+
+.grid-container{
+
+    display: grid;
+  grid-template-areas: 'item1 item1 item1 item1 item1 item1'
+  'item2 item2 item2 item2 item2 item2 '
+  'item3 item3 item3 item3 item3 item3  ';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  justify-content: center;
+
+}
 
 
 
-
-
-.especialidades {grid-area:especialidades;}
-.instalaciones{grid-area:instalaciones;}
-.maps{grid-area:maps}
-.footer{grid-area:footer;}
-
-
-
-
-
-
-
-
-
-
-
+.especialidades { grid-area: item1; }
+.instalaciones { grid-area: item2; }
+.maps { grid-area: item3; }
 
 
 
@@ -55,7 +86,8 @@
 
         
     </head>
-    <body>
+    <body style = "margin:0">
+   
         
 
 
@@ -64,38 +96,39 @@
         <div class="menu">
         
         <ul class="menu1">
-            <li> <img src="IMAGENES/punto.png" width="30">Clinica pamplona</li>
-            <li>111111111</li>
+            <li> <img src="IMAGENES/pin.png" width="15">Clinica pamplona</li>
+            <li>948 70 20 57</li>
 
-            <li><img src="IMAGENES/punto.png" width="30">Clinica tafalla</li>
-            <li>111111111</li>
+            <li><img src="IMAGENES/pin.png" width="15">Clinica tafalla</li>
+            <li>948 70 20 57</li>
+            <li class="social-media">(facebook) twitter instagram</li>
 
-            <li>(facebook)</li>
-            <li>twitter</li>
-            <li>instagram</li>
+            </ul>
 
-        </ul>
+            
         
 
-        <hr/>
+        
 
         <!-- /* MENU */ -->
 
     <ul class="menu2">
-        <li><img src="IMAGENES/LOGO.png" alt="LOGO" width="400"></li>
-        <li><a href="link inicio">INICIO</a></li>
-        <li><a href="link servicios">SERVICIOS</a></li>
-        <li><a href="link equipo">EQUIPO</a></li>
-        <li><a href="link instalaciones">INSTALACIONES</a></li>
-        <li><a href="link contacto">CONTACTO</a></li>
+        <li class="logo"><img src="IMAGENES/LOGO.png" alt="LOGO" width="250" ></li>
+        <li><a href="link inicio"><b>Inicio</b></a></li>
+        <li><a href="link servicios"><b>Servicios</b></a></li>
+        <li><a href="link equipo"><b>Equipo Humano</b></a></li>
+        <li><a href="link instalaciones"><b>Instalaciones</b></a></li>
+        <li><a href="link contacto"><b>Contacto</b></a></li>
         <li><a href="link LEGAL">legal</a></li>
 
     </ul>
     
 </div>
+
+<div class=" body1">
     <div class="grid-container">
-<div class="especialidades">
-        <h3>ESPECIALDIADES</h3>
+        <div class="especialidades">
+        <h3>Nuestras especialidades</h3>
         <table>
             <tr>
                 <th>Implantología</th>
@@ -133,7 +166,7 @@
         <h3>NUESTRAS INSTALACIONES</h3>
             <img src="link" alt="descripcion de foto">
             <img src="link" alt="descripcion de foto">
-            <!-- /* CSS HACER QUE QUEDEN EN HORIZONTAL */ -->
+            <!-- /* https://icon-icons.com/es/pack/Dentist/3985 */ -->
 </div>
     </br>
     </br>
@@ -153,7 +186,9 @@
                 </tr>
 
                 <tr>
-                    <td>LINK MAPS</td>
+                    <td><div class="Contacto_Izq">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div></td>
                 </tr>
 
                 <tr>
@@ -168,7 +203,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>LINK MAPS</td>
+                    <td><div class="Contacto_Izq">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div></td>
+                    
                 </tr>
             </div>
                 
@@ -176,14 +214,17 @@
             </table>
         </br>
 
-        
-    </body>
+    </div>
+    
 
-<div class="footer">
+</div>
     <footer>
         <P>todos los derechos reservados / aviso legal / cookies</P>
         <p>Diseñada por cemboelcrack y juan</p>
+        </footer>
     </footer>
-</div>
-</div>
+
+
+</body>
 </html>
+
