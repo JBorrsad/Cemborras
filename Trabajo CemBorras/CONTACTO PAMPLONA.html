@@ -24,15 +24,224 @@
                 width: 100%;
                 height: 75px;
             }
-            .tamanio{
+            .menu1 > .div-item {
+            margin-right: 5%;
+        }
 
+        
+
+        .menu1 {
+    z-index: 10;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    position: relative; 
+    -webkit-box-shadow: 0px 0px 8px grey; 
+}
+
+.menu2 {
+    z-index: 9;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    -webkit-box-shadow: 0px 0px 10px grey; 
+    position: relative; 
+    
+    
+}
+
+        .especialidades {
+            display: inline-block;
+            width: 80%;
+            padding: 0 10%;
+            float: left;
+            margin-top:200px;
+            margin-bottom: 200px;
+        }
+
+        .especialidad-item {
+            float: left;
+            width: 33%;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom:100px;
+        }
+
+        .maps    {
+            display: inline-block;
+            width: 80%;
+            padding: 0 10%;
+            margin-bottom:100px;
+        }
+
+        .map-item {
+            display: flex;
+            width: 50%;
+            text-align: center;
+            float: left;
+        }
+
+        .map-txt {
+            width: 20%;
+            text-align: center;
+            margin-left: 15%;
+        }
+
+        .map-blank {
+            height: 200px;
+        }
+
+        .menu1 > .div-item {
+            margin-right: 5%;
+        }
+
+        
+
+        .menu2 > div:first-child {
+            margin-left: 10%;
+            margin-right:30%
+        }
+
+        .menu1 > div:last-child {
+            margin-left: auto;
+        }
+
+        .menu1 > div:first-child {
+            margin-left: 10%;
+        }
+
+        .menu {
+            z-index: 2;
+            display: block;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            
+            
+        }
+
+        .menu2 > div:not(:first-child) {
+            
+            border-color: grey;
+            border-left: 1px solid grey;
+            
             }
+
+        .menu2>div:last-child{
+            
+            border-color: grey;
+            border-right: 1px solid grey;
+            
+
+        }
+            
+        
+
+        
+            
+        
+
+        footer {
+            height: 150px;
+            position: bottom;
+            bottom: 0;
+            background-color: grey;
+            padding-top: 50px;
+            margin-top: 20px
+
+        }
+
+        .footer {
+           
+            margin: 0% 10%;
+        }
+
+        .blank-footer{
+             height: 10px;
+
+        }
+
+        body {
+            z-index: 1;
+        }
+
+        .menu2> div>a{
+            color:black;
+            text-decoration: none;
+        }
+
+        
+
+        .menu2>div:hover:not(:first-child){  
+            background-color: grey;
+            padding-top: auto;
+            padding-bottom: auto;
+            cursor:pointer;
+        }
+
+        .menu2>div:hover>a{  
+            color:aquamarine
+        }
+
+        .menu-item {
+            padding: 20px 15px 22px 15px;
+            
+            
+        }
+
+        .menu-item a {
+                white-space: nowrap;
+        }
+        .footer2{
+            display:flex;
+            padding-top: 20px;
+            
+            border-top: 1px solid white;
+            
+        }
+
+        .footer2>div:last-child{margin-left: auto;
+        }
+        .contacto{
+            margin-top: 100px;
+        }
+        .parte1{
+            margin-top: 100px;
+        }
         </style>
     </head>
     <body>
         <form action="1.html"></form>
-        <!--Contacto-->
-        <!--Menu-->
+        <div class="menu">
+            <div class="menu1">
+                <div class="div-item">
+                    <img src="IMAGENES/pin.png" width="15">Clinica pamplona
+                </div>
+                <div class="div-item">948 70 20 57</div>
+                <div class="div-item"><img src="IMAGENES/pin.png" width="15">Clinica tafalla</div>
+                <div class="div-item">948 70 20 57</div>
+                <div class="social-media">(facebook) twitter instagram</div>
+            </div>
+        
+            
+        
+            <div class="menu2">
+                <div class="logo"><img src="IMAGENES/LOGO.png" alt="LOGO" width="250"></div>
+                <div class="menu-item" onclick="redirect()"><a href="link inicio"><b>Inicio</b></a></div>
+                <div class="menu-item" onclick="redirect()"><a href="link servicios"><b>Servicios</b></a></div>
+                <div class="menu-item" onclick="redirect()"><a href="link equipo"><b>Equipo Humano</b></a></div>
+                <div class="menu-item" onclick="redirect()"><a href="link instalaciones"><b>Instalaciones</b></a></div>
+                <div class="menu-item" onclick="redirect()"><a href="link contacto"><b>Contacto</b></a></div>
+                <div class="menu-item" onclick="redirect()"><a href="link LEGAL"><b>Legal</b></a></div>
+            </div>
+        </div>
+        <div class="contacto">
         <div class="Contacto_Izq">
             <p>Soy borras el sabio el que te ayuda con la movida esta de los dientes y que no te hace cosas malas</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.8281151392666!2d-1.6580112074532813!3d42.81311819018099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a77f79f4d933d%3A0x1982d1f1ad0beac4!2sCLINICA%20BORRAS!5e0!3m2!1sen!2ses!4v1708371819571!5m2!1sen!2ses" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -56,7 +265,15 @@
                 </td></tr>
             </table>
         </div>
+        </div>
     <footer>
-        <!--Footer-->
+        <div class="blank-footer"></div>
+    <div class="footer">
+        <div class="footer1"></div>
+        <div class="footer2">
+            <div> todos los derechos reservados / aviso legal / cookies</div>
+            <div> Diseñada por cemboelcrack y juan</div>
+        </div> 
+    </div>
     </footer>
 </html>
