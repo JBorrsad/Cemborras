@@ -6,9 +6,9 @@
             font-family: sans-serif;
         }
 
-        .menu1 {
+.menu1 {
     z-index: 10;
-    background-color: aquamarine;
+    background-color: rgb(46 196 181);
     display: flex;
     align-items: center;
     height: 20px;
@@ -41,7 +41,9 @@
             float: left;
             width: 33%;
             text-align: center;
-        }
+            margin-bottom: 100px;
+            position: relative;
+            }
 
         h3 {
             text-align: center;
@@ -104,15 +106,15 @@
 
         .menu2 > div:not(:first-child) {
             
-            border-color: grey;
-            border-left: 1px solid grey;
+            border-color: rgb(228, 228, 228);
+            border-left: 1px solid rgb(228, 228, 228);
             
             }
 
         .menu2>div:last-child{
             
-            border-color: grey;
-            border-right: 1px solid grey;
+            border-color: rgb(228, 228, 228);
+            border-right: 1px solid rgb(228, 228, 228);
             
 
         }
@@ -154,14 +156,14 @@
         
 
         .menu2>div:hover:not(:first-child){  
-            background-color: grey;
+            background-color: rgb(221, 221, 221);
             padding-top: auto;
             padding-bottom: auto;
             cursor:pointer;
         }
 
         .menu2>div:hover>a{  
-            color:aquamarine
+            color:rgb(46 196 182);
         }
 
         .menu-item {
@@ -185,6 +187,25 @@
 
         .footer2>div:last-child{margin-left: auto;
         }
+
+
+        .dot {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(46, 196, 181, 0.445);
+  border-radius: 50%;
+  position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+
+.especialidad-item>div, .especialidad-item>span, .especialidad-item>img {
+            
+            }
         
     </style>
 
@@ -226,18 +247,18 @@ function redirect() {
 <div class="especialidades">
     <h3>NUESTRAS ESPECIALIDADES</h3>
     <div class="esp">
-        <div class="especialidad-item"><img src="IMAGENES/punto.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><img src="IMAGENES/punto.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><img src="IMAGENES/punto.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item">descripción</div>
-        <div class="especialidad-item">descripción</div>
-        <div class="especialidad-item">descripción</div>
-        <div class="especialidad-item"><img src="IMAGENES/punto.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><img src="IMAGENES/punto.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><img src="IMAGENES/punto.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item">descripción</div>
-        <div class="especialidad-item">descripción</div>
-        <div class="especialidad-item">descripción</div>
+        <div class="especialidad-item"><span class="dot" ></span><img style="z-index: 100;" src="IMAGENES/esp1.png" alt="LOGO" width="80" background=""></div>
+        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp2.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp3.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item"><b>Implantología</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item"><b>cirugía oral y peridoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item"><b>Odontopediatría</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp4.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp5.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp6.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item"><b>Rehabilitación respiratoria y masticatoria</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item"><b>Estética facial</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item"><b>Ortodoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
     </div>
 </div>
 
@@ -285,6 +306,8 @@ function redirect() {
         <div class="footer2">
             <div> todos los derechos reservados / aviso legal / cookies</div>
             <div> Diseñada por cemboelcrack y juan</div>
+
+            
         </div> 
     </div>
     
