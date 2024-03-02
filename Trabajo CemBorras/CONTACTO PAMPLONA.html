@@ -11,6 +11,7 @@
                 position: absolute;
                 left: 55%;
                 top: 50px;
+                margin-top: 100px;
 
             }
             .parte2{
@@ -211,13 +212,38 @@
         .contacto{
             margin-top: 100px;
         }
-        .parte1{
-            margin-top: 100px;
+        #mensaje{
+            height: 100px;
+            width: 100%;
+        }
+        .form{
+            width: 100%;
+        }
+        i{
+            color: aquamarine;
+            width: 1.25em;
+        }
+        .footer2 img{
+            color: aqua;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            margin: 0 10%;
+        }
+        .container p{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .imagen1 img{
+            width: 30px;
+            height: 30px;
         }
         </style>
     </head>
     <body>
-        <form action="1.html"></form>
+        <form action="1.html">
         <div class="menu">
             <div class="menu1">
                 <div class="div-item">
@@ -228,9 +254,6 @@
                 <div class="div-item">948 70 20 57</div>
                 <div class="social-media">(facebook) twitter instagram</div>
             </div>
-        
-            
-        
             <div class="menu2">
                 <div class="logo"><img src="IMAGENES/LOGO.png" alt="LOGO" width="250"></div>
                 <div class="menu-item" onclick="redirect()"><a href="link inicio"><b>Inicio</b></a></div>
@@ -241,31 +264,66 @@
                 <div class="menu-item" onclick="redirect()"><a href="link LEGAL"><b>Legal</b></a></div>
             </div>
         </div>
-        <div class="contacto">
-        <div class="Contacto_Izq">
-            <p>Soy borras el sabio el que te ayuda con la movida esta de los dientes y que no te hace cosas malas</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.8281151392666!2d-1.6580112074532813!3d42.81311819018099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a77f79f4d933d%3A0x1982d1f1ad0beac4!2sCLINICA%20BORRAS!5e0!3m2!1sen!2ses!4v1708371819571!5m2!1sen!2ses" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="Contacto_Der">
-            <table class="parte1">
-                <tr>
+        <div class="container">
+            <div class="contacto">
+                <div class="Contacto_Izq">
+                    <p>Soy borras el sabio el que te ayuda con la movida esta de los dientes y que no te hace cosas malas</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.8281151392666!2d-1.6580112074532813!3d42.81311819018099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a77f79f4d933d%3A0x1982d1f1ad0beac4!2sCLINICA%20BORRAS!5e0!3m2!1sen!2ses!4v1708371819571!5m2!1sen!2ses" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contacto_Med">
+                    <div class="Dirección1">
+                        <div class="imagen1">
+                            <img src="IMAGENES/1492790962-53location_84191.png" alt="ubicacion">
+                        </div>
+                        <div class="texto1">
+
+                        </div>
+                    </div>
+                    <div class="Telefono1">
+                        <div class="imagen1">
+                            <img src="IMAGENES/4205762.png" alt="telefono">
+                        </div>
+                        <div class="texto1">
+
+                        </div>
+                    </div>
+                    <div class="Email">
+                        <div class="imagen1">
+                            <img src="IMAGENES/4213922.png" alt="email">
+                        </div>
+                        <div class="texto1">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Contacto_Der">
+                <table class="parte1">
+                    <tr>
+                    <div class="form">
                     <td><input type="text" name="nombre" id="nombre" placeholder="Nombre" required class="tamanio"></input></td>
                     <td><input type="text" name="email" id="email" placeholder="Email" required class="tamanio"></input></td>
                     <td><input type="text" name="telefono" id="telefono" placeholder="Telefono" required class="tamanio"></input></td>
+                    </div>
                 </tr>
                 <tr>
                     <td colspan="3"><input type="textarea" name="mensaje" id="mensaje" placeholder="Mensaje" required class="medio"></input></td>
                 </tr>
-                <tr><td colspan="3">
+                <tr>
+                    <td colspan="3">
                     <input type="checkbox" name="acepto" id="acepto" required>
                     <label for="acepto">He leido y acepto las condiciones del <a href="Avisos...">Aviso legal y la política de privacidad</a></label>
-                </td> </tr>
-                <tr><td colspan="3">
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="3">
                     <input type="submit" value="Enviar">
-                </td></tr>
+                    </td>
+                </tr>
             </table>
         </div>
-        </div>
+    </div>
+    </form>
     <footer>
         <div class="blank-footer"></div>
     <div class="footer">
@@ -273,6 +331,7 @@
         <div class="footer2">
             <div> todos los derechos reservados / aviso legal / cookies</div>
             <div> Diseñada por cemboelcrack y juan</div>
+            <img src="../14.png" alt="">
         </div> 
     </div>
     </footer>
