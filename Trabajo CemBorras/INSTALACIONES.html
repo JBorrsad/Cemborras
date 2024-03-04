@@ -4,140 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalaciones</title>
-    <style>* {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    .menu1, .menu2 {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-        -webkit-box-shadow: 0px 0px 8px grey;
-        z-index: 3;
-    }
-    
-    .menu1 {
-        background-color: rgb(46 196 181);
-        height: 20px;
-        top: 0;
-        z-index: 4;
-    }
-    
-    .menu2 > div:first-child {
-            margin-left: 10%;
-            margin-right:30%
-        }
-        .menu2 > div:not(:first-child) {
-            
-            border-color: rgb(228, 228, 228);
-            border-left: 1px solid rgb(228, 228, 228);
-            
-            }
-
-            .menu2>div:last-child{
-            
-            border-color: rgb(228, 228, 228);
-            border-right: 1px solid rgb(228, 228, 228);
-            
-
-        }
-    .menu2 {
-        background-color: white;
-        height: 60px;
-        top: 20px;
-        z-index: 3;
-        display: flex;
-       
-    }
-    
-    .menu1 > .div-item, .menu2 > div {
-        margin-right: 5%;
-    }
-    
-    .menu1 > div:last-child, .menu2 > div:last-child {
-        margin-left: auto;
-    }
-    
-    .menu1 > div:first-child, .menu2 > div:first-child {
-        margin-left: 10%;
-    }
-    
-    .menu2 > div {
-        margin-right: 20px; 
-        padding: 0 10px; 
-    }
-    
-    .menu2 > div:last-child {
-        margin-right: 0; 
-    }
-    
-    .menu2 > div > a {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .menu2 > div:hover:not(:first-child) {
-        background-color: rgb(221, 221, 221);
-        cursor: pointer;
-    }
-    
-    .menu2 > div:hover > a {
-        color: rgb(46, 196, 182);
-    }
-    
-    .menu-item {
-        padding: 20px 15px 22px 15px;
-    }
-    
-    .menu-item a {
-        white-space: nowrap;
-    }
-    
-    .pamplona, .tafalla {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 10px;
-        background-color: white;
-        padding: 0px;
-        margin-bottom: 100px;
-    }
-    
-    .pamplona > div, .tafalla > div {
-        text-align: center;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .container {
-        margin: 0 10%;
-    }
-    
-    h2, h3 {
-        margin: 100px 0;
-        text-align: center;
-    }
-    
-    footer {
-        background-color: grey;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-    }
-    
-
-    </style>
+    <link rel="stylesheet" href="css/instalaciones.css">
+    <link rel="stylesheet" href="css/menu.css">
+ 
 </head>
-<body>
+<body style="margin: 0;">
     <div class="menu">
         <div class="menu1">
             <div class="div-item">
@@ -155,7 +26,7 @@
             <div class="menu-item" onclick="redirect()"><a href="SERVICIOS.html"><b>Servicios</b></a></div>
             <div class="menu-item" onclick="redirect()"><a href="EQUIPO.html"><b>Equipo Humano</b></a></div>
             <div class="menu-item" onclick="redirect()"><a href="INSTALACIONES.html"><b>Instalaciones</b></a></div>
-            <div class="menu-item" onclick="redirect()"><a href="link contacto"><b>Contacto</b></a></div>
+            <div class="menu-item" onclick="redirect()"><a href="CONTACTO_PAMPLONA.html"><b>Contacto</b></a></div>
             <div class="menu-item" onclick="redirect()"><a href="LEGAL.html"><b>Legal</b></a></div>
         </div>
     </div>

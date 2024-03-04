@@ -1,105 +1,51 @@
 <!DOCTYPE html>
 <html>
-
+    <link rel="stylesheet" href="css/contactopamplona.css">
+    <link rel="stylesheet" href="css/menu.css">
 <head>
     <title>Cita</title>
-    <style>
-        
+    
 
-        .especialidad-item {
-            float: left;
-            width: 33%;
-            text-align: center;
-        }
-        .map-item {
-            display: flex;
-            width: 50%;
-            text-align: center;
-            float: left;
-        }
-
-        .map-txtHijo {            
-            width: 20%;             
-            text-align: center;             
-            margin-left: 15%;         
-        }
-
-        body {
-            z-index: 1;
-        }
-
-        .contacto {
-            margin-top: 100px;
-        }
-        .container {
-            margin: 0 10%;
-            display: inline-block;
-            width: 80%;
-            margin-bottom:100px;
-            display: flex;
-            align-items: center;
-        }
-        .container > div{
-            width: 50%;
-            text-align: center;
-            float: left;
-            align-items: center;
-            margin-top: 150px;
-        }
-        h3{
-            margin-bottom: 35px;
-            position: relative;
-            display: block;
-        }
-        .formulario
-        {
-            padding: 5%;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-        }
-        #mensaje{
-            height: 80px;
-            width: 100%;
-        }
-        .map-map{
-            margin-left: 10%;
-        }
-        iframe{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-        }
-        .tamanio{
-            width: 100%;
-        }
-        .name {
-            width: 80%;
-        }
-        .name1{
-            margin-left: auto;
-        }
-        .name3{
-            margin-right: auto;
-        }
-        .name2{
-            padding: 0 15px;
-        }
-
-        
-
-        
-    </style>
+<script>
+    function redirect() {
+        var link = document.querySelector('.menu-item a').getAttribute('href');
+        window.location.href = link;
+    }
+    </script>
 </head>
 
 <body style="margin:0;">
+
+    <div class="menu">
+        <div class="menu1">
+            <div class="div-item">
+                <img src="IMAGENES/pin.png" width="15">Clinica pamplona
+            </div>
+            <div class="div-item">948 70 20 57</div>
+            <div class="div-item"><img src="IMAGENES/pin.png" width="15">Clinica tafalla</div>
+            <div class="div-item">948 70 20 57</div>
+            <div class="social-media">(facebook) twitter instagram</div>
+        </div>
+    
+        
+    
+        <div class="menu2">
+            <div class="logo"><img src="IMAGENES/LOGO.png" alt="LOGO" width="250"></div>
+            <div class="menu-item" onclick="redirect()"><a href="MAIN.html"><b>Inicio</b></a></div>
+            <div class="menu-item" onclick="redirect()"><a href="SERVICIOS.html"><b>Servicios</b></a></div>
+            <div class="menu-item" onclick="redirect()"><a href="EQUIPO.html"><b>Equipo Humano</b></a></div>
+            <div class="menu-item" onclick="redirect()"><a href="INSTALACIONES.html"><b>Instalaciones</b></a></div>
+            <div class="menu-item" onclick="redirect()"><a href="CONTACTO_PAMPLONA.html"><b>Contacto</b></a></div>
+            <div class="menu-item" onclick="redirect()"><a href="LEGAL.html"><b>Legal</b></a></div>
+        </div>
+    </div>
     <form action="1.html">
         <div class="container">
             <div class="map-item">
                 <div class="map-txt">
                 <div class="map-blank">
                 <div class="map-txtHijo">
-                    <div>pamplona</div>
+                    <div>Pamplona</div>
                     <div>HORARIO:</div>
                     <div>calle</div>
                     <div>telefono</div>
@@ -111,10 +57,11 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-           
-            <div class="formulario">
-                <h3>¿Tienes dudas? Contactanos</h3>
-                <table>
+            
+            <div class="formytitulo">
+                <div class="titulo"><h3>¿Tienes dudas? Contactanos</h3></div>
+            <div class="blank"></div>
+                <div class="=formulario">  <table>
                     <tr>
                             <td><div class="name1"><input type="text" name="nombre" id="nombre" placeholder="Nombre" required
                                     class="tamanio"></input></div></td>
@@ -140,6 +87,7 @@
                         </td>
                     </tr>
                 </table>
+            </div>
             </div>
         
         </div>

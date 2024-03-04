@@ -1,266 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        * {
-            font-family: sans-serif;
-        }
-
-        .menu1 {
-    background-color: rgb(46 196 181);
-    display: flex;
-    align-items: center;
-    height: 20px;
-    position: fixed; 
-    width: 100%; 
-    top: 0; 
-    z-index: 3; 
-    -webkit-box-shadow: 0px 0px 8px grey; 
-}
-
-.menu2 {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    position: fixed;
-    width: 100%; 
-    top: 20px; 
-    z-index: 2; 
-    -webkit-box-shadow: 0px 0px 10px grey; 
-}
-
-        .especialidades {
-            display: inline-block;
-            width: 65%;
-            padding: 0 15%;
-            
-            margin-top:100px;
-          
-        }
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
     
-
-        .especialidad-item1 img {
-    position: relative;
-    z-index: 1; 
-}
-        .especialidad-item1 {
-            float: left;
-            width: 33%;
-            text-align: center;
-            margin-bottom: 100px;
-            position: relative;
-            }
-
-            .especialidad-item2 {
-            float: left;
-            width: 20%;
-            padding:0 6.5%;
-            
-            text-align: center;
-            margin-bottom: 100px;
-            position: relative;
-            }
-
-        h3 {
-            text-align: center;
-            margin-bottom:40px;
-        }
-
-        
-        footer * {
-    color: white; 
-}
-        
-
-       
-
-       
-
-        .menu1 > .div-item {
-            margin-right: 5%;
-        }
-
-        
-
-        .menu2 > div:first-child {
-            margin-left: 10%;
-            margin-right:30%
-        }
-
-        .menu1 > div:last-child {
-            margin-left: auto;
-        }
-
-        .menu1 > div:first-child {
-            margin-left: 10%;
-        }
-
-        .menu {
-            z-index: 2;
-            display: block;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            background-color: white;
-            
-            
-        }
-
-        .menu2 > div:not(:first-child) {
-            
-            border-color: rgb(228, 228, 228);
-            border-left: 1px solid rgb(228, 228, 228);
-            
-            }
-
-        .menu2>div:last-child{
-            
-            border-color: rgb(228, 228, 228);
-            border-right: 1px solid rgb(228, 228, 228);
-            
-
-        }
-            
-        footer {
-            height: 150px;
-            
-            bottom: 0;
-            background-color: grey;
-            padding-top: 10px;
-            width: 100%;
-        }
-
-        .footer {
-           
-            margin: 0% 10%;
-        }
-
-        .blank-footer{
-             height: 10px;
-
-        }
-
-        body {
-            z-index: 1;
-        }
-
-        .menu2> div>a{
-            color:black;
-            text-decoration: none;
-        }
-
-        
-
-        .menu2>div:hover:not(:first-child){  
-            background-color: rgb(221, 221, 221);
-            padding-top: auto;
-            padding-bottom: auto;
-            cursor:pointer;
-        }
-
-        .menu2>div:hover>a{  
-            color:rgb(46 196 182);
-        }
-
-        .menu-item {
-            padding: 20px 15px 22px 15px;
-            
-            
-        }
-
-        .menu-item a {
-                white-space: nowrap;
-        }
-        
-
-        .footer2{
-            display:flex;
-            padding-top: 20px;
-            
-            border-top: 1px solid white;
-            }
-
-        .footer2>div:last-child{margin-left: auto;
-        }
-
-
-        .dot {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(46, 196, 181 );
-  border-radius: 50%;
-  position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-}
-
-
-h3{font-size: 40px;}
-
-
-.mapas {
-    display: inline-block;
-            width: 80%;
-           margin-top:100px;
-            margin-bottom: 10px;
-            padding:0 10%
-    
-    
-    
-}
-.texto{
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-    
-}
-
-.mapaotexto{
-    display: flex;
-    width: 25%;
-    float: left; justify-content: center; 
-    align-items: center; 
-}
-
-
-
-.mapablank{
-    height: 100px;
-}
-
-.mapastitulos{
-font-size: 25px;
-
-}
-
-.fondoazul{
-    background-color: rgb( 241 255 254);
-    z-index:0;
-}
-
-.footer img {
-
-    padding-bottom: 10px;
-}
-
-
-
-    </style>
-
-    <script>
+   <script>
 function redirect() {
     var link = document.querySelector('.menu-item a').getAttribute('href');
     window.location.href = link;
 }
+</script>
 
-
-
-    </script>
 </head>
 <body style="margin:0">
     
@@ -268,13 +20,18 @@ function redirect() {
 <div class="menu">
     <div class="menu1">
         <div class="div-item">
-            <img src="IMAGENES/pin.png" width="15">Clinica pamplona
+            <img src="IMAGENES/location-dot-solid.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clinica pamplona
         </div>
         <div class="div-item">948 70 20 57</div>
-        <div class="div-item"><img src="IMAGENES/pin.png" width="15">Clinica tafalla</div>
+        <div class="div-item"><img src="IMAGENES/location-dot-solid.svg" width="10">Clinica tafalla</div>
         <div class="div-item">948 70 20 57</div>
-        <div class="social-media">(facebook) twitter instagram</div>
+        <div class="social-media">
+           <img src="IMAGENES/twitter.svg">
+           <img src="IMAGENES/facebook.svg" width="10">
+           <img src="IMAGENES/instagram.svg">
+        </div>
     </div>
+    
 
     
 
@@ -284,7 +41,7 @@ function redirect() {
         <div class="menu-item" onclick="redirect()"><a href="SERVICIOS.html"><b>Servicios</b></a></div>
         <div class="menu-item" onclick="redirect()"><a href="EQUIPO.html"><b>Equipo Humano</b></a></div>
         <div class="menu-item" onclick="redirect()"><a href="INSTALACIONES.html"><b>Instalaciones</b></a></div>
-        <div class="menu-item" onclick="redirect()"><a href="link contacto"><b>Contacto</b></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="CONTACTO_PAMPLONA.html"><b>Contacto</b></a></div>
         <div class="menu-item" onclick="redirect()"><a href="LEGAL.html"><b>Legal</b></a></div>
     </div>
 </div>
@@ -356,7 +113,7 @@ function redirect() {
     <div class="blank-footer"></div>
     <div class="footer">
         <div class="footer1">
-<img src="IMAGENES/logofooter.png" height="60px">
+<img src="IMAGENES/logofooter.png" height="40px">
             <br>Al servicio de todas sus necesidades dentales en Tafalla y Pamplona. 
         </div>
         

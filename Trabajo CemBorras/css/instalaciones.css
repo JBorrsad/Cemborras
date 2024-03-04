@@ -1,0 +1,47 @@
+
+ * {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+            
+            -webkit-font-smoothing:antialiased;
+        }
+
+ 
+    .pamplona, .tafalla {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
+        background-color: white;
+        padding: 0px;
+        margin-bottom: 100px;
+    }
+    
+    .pamplona > div, .tafalla > div {
+        text-align: center;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .container {
+        margin: 0 10%;
+    }
+    
+    h2, h3 {
+        margin: 100px 0;
+        text-align: center;
+    }
+
+    img {
+        transition: transform 0.2s; 
+    }
+    
+    img:hover:not(.menu2 img) {
+        transform: scale(1.4); 
+    }
+    
+
+
+   
