@@ -6,38 +6,46 @@
             font-family: sans-serif;
         }
 
-.menu1 {
-    z-index: 10;
+        .menu1 {
     background-color: rgb(46 196 181);
     display: flex;
     align-items: center;
     height: 20px;
-    position: relative; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 3; 
     -webkit-box-shadow: 0px 0px 8px grey; 
 }
 
 .menu2 {
-    z-index: 9;
     background-color: white;
     display: flex;
     align-items: center;
     height: 60px;
+    position: fixed;
+    width: 100%; 
+    top: 20px; 
+    z-index: 2; 
     -webkit-box-shadow: 0px 0px 10px grey; 
-    position: relative; 
-    
-    
 }
 
         .especialidades {
             display: inline-block;
-            width: 80%;
-            padding: 0 10%;
-            float: left;
-            margin-top:200px;
-            margin-bottom: 200px;
+            width: 65%;
+            padding: 0 15%;
+            
+            margin-top:100px;
+          
         }
 
-        .especialidad-item {
+    
+
+        .especialidad-item1 img {
+    position: relative;
+    z-index: 1; 
+}
+        .especialidad-item1 {
             float: left;
             width: 33%;
             text-align: center;
@@ -45,34 +53,30 @@
             position: relative;
             }
 
+            .especialidad-item2 {
+            float: left;
+            width: 20%;
+            padding:0 6.5%;
+            
+            text-align: center;
+            margin-bottom: 100px;
+            position: relative;
+            }
+
         h3 {
             text-align: center;
-            margin-bottom:100px;
+            margin-bottom:40px;
         }
 
-        .maps    {
-            display: inline-block;
-            width: 80%;
-            padding: 0 10%;
-            margin-bottom:100px;
-        }
+        
+        footer * {
+    color: white; 
+}
+        
 
-        .map-item {
-            display: flex;
-            width: 50%;
-            text-align: center;
-            float: left;
-        }
+       
 
-        .map-txt {
-            width: 20%;
-            text-align: center;
-            margin-left: 15%;
-        }
-
-        .map-blank {
-            height: 200px;
-        }
+       
 
         .menu1 > .div-item {
             margin-right: 5%;
@@ -121,11 +125,11 @@
             
         footer {
             height: 150px;
-            position: bottom;
+            
             bottom: 0;
             background-color: grey;
-            padding-top: 50px;
-
+            padding-top: 10px;
+            width: 100%;
         }
 
         .footer {
@@ -176,8 +180,7 @@
             padding-top: 20px;
             
             border-top: 1px solid white;
-            
-        }
+            }
 
         .footer2>div:last-child{margin-left: auto;
         }
@@ -186,10 +189,10 @@
         .dot {
   height: 100px;
   width: 100px;
-  background-color: rgba(46, 196, 181, 0.445);
+  background-color: rgb(46, 196, 181 );
   border-radius: 50%;
   position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -197,10 +200,56 @@
 }
 
 
-.especialidad-item>div, .especialidad-item>span, .especialidad-item>img {
-            
-            }
-        
+h3{font-size: 40px;}
+
+
+.mapas {
+    display: inline-block;
+            width: 80%;
+           margin-top:100px;
+            margin-bottom: 10px;
+            padding:0 10%
+    
+    
+    
+}
+.texto{
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    
+}
+
+.mapaotexto{
+    display: flex;
+    width: 25%;
+    float: left; justify-content: center; 
+    align-items: center; 
+}
+
+
+
+.mapablank{
+    height: 100px;
+}
+
+.mapastitulos{
+font-size: 25px;
+
+}
+
+.fondoazul{
+    background-color: rgb( 241 255 254);
+    z-index:0;
+}
+
+.footer img {
+
+    padding-bottom: 10px;
+}
+
+
+
     </style>
 
     <script>
@@ -208,6 +257,8 @@ function redirect() {
     var link = document.querySelector('.menu-item a').getAttribute('href');
     window.location.href = link;
 }
+
+
 
     </script>
 </head>
@@ -237,68 +288,80 @@ function redirect() {
         <div class="menu-item" onclick="redirect()"><a href="LEGAL.html"><b>Legal</b></a></div>
     </div>
 </div>
-
+<div class="fondoazul">
 <div class="especialidades">
-    <h3>NUESTRAS ESPECIALIDADES</h3>
+    <h3>Qué te ofrecemos?</h3>
     <div class="esp">
-        <div class="especialidad-item"><span class="dot" ></span><img style="z-index: 100;" src="IMAGENES/esp1.png" alt="LOGO" width="80" background=""></div>
-        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp2.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp3.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><b>Implantología</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item"><b>cirugía oral y peridoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item"><b>Odontopediatría</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp4.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp5.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><span class="dot" ></span><img src="IMAGENES/esp6.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item"><b>Rehabilitación respiratoria y masticatoria</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item"><b>Estética facial</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item"><b>Ortodoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item1"><span class="dot" ></span><img  src="IMAGENES/esp1.png" alt="LOGO" width="80"></span></div>
+        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp2.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp3.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item2"><b>Implantología</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item2"><b>cirugía oral y peridoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item2"><b>Odontopediatría</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp4.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp5.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp6.png" alt="LOGO" width="80"></div>
+        <div class="especialidad-item2"><b>Rehabilitación respiratoria y masticatoria</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item2"><b>Estética facial</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item2"><b>Ortodoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
     </div>
-</div>
+    </div></div>
 
-<div class="instalaciones">
-    <h3>NUESTRAS INSTALACIONES</h3>
-    <img src="link" alt="descripcion de foto">
-    <img src="link" alt="descripcion de foto">
-    <!-- /* https://icon-icons.com/es/pack/Dentist/3985 */ -->
-</div>
+            <div class="instalaciones">
+                        <h3>Hecha un vistazo a nuestras instalaciones</h3>
+                        <img src="IMAGENES/c1.jpeg" height="200px" alt="descripcion de foto">
+                        <img src="IMAGENES/t10.jpeg" height="200px" alt="descripcion de foto">
+                        <!-- /* https://icon-icons.com/es/pack/Dentist/3985 */ -->
+            </div>
+            <h3>Aquí nos puedes encontrar</h3>
 
-<div class="maps">
-    <div class="map-item">
-        <div class="map-txt">
-            <div class="map-blank"></div>
-            <div>tafalla</div>
-            <div>HORARIO:</div>
-            <div>calle</div>
-            <div>telefono</div>
-            <div>Mail</div>
-        </div>
-        <div class="map-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
+           
+           
+            <div class="fondoazul">
+                        <div class="mapas">
+                           <div class="mapaotexto">
+                            <div class="texto" ><div class="mapastitulos">CLINICA PAMPLONA</div><div class="mapablank"></div>
+                                HORARIO: 9:00-17:00 de Lunes a Viernes<br>
+                                Diputación Foral, 2 - 2º C y D<br>
+                                948 70 20 57<br>
+                                tafalla@clinicasadaborras.com
+                                
+                        
+                        
+                            </div></div>
+                        
 
-    <div class="map-item">
-        <div class="map-txt">
-            <div class="map-blank"></div>
-            <div>tafalla</div>
-            <div>HORARIO:</div>
-            <div>calle</div>
-            <div>telefono</div>
-            <div>Mail</div>
-        </div>
-        <div class="map-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-</div>
+                            <div class="mapaotexto">
+                            <div class="mapa" >   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+                        </div>
+                        <div class="mapaotexto">
+
+                            <div class="texto" ><div class="mapastitulos">CLINICA PAMPLONA</div><div class="mapablank"></div>
+                                HORARIO: 9:00-17:00 de Lunes a Viernes<br>
+                                Diputación Foral, 2 - 2º C y D<br>
+                                948 70 20 57<br>
+                                tafalla@clinicasadaborras.com<br>
+                        
+                        
+                            </div></div>
+
+                            <div class="mapaotexto">
+                            <div class="mapa" >   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+                            </div>
+                        </div></div>
+          
+
 
 <footer >
     <div class="blank-footer"></div>
     <div class="footer">
-        <div class="footer1"></div>
+        <div class="footer1">
+<img src="IMAGENES/logofooter.png" height="60px">
+            <br>Al servicio de todas sus necesidades dentales en Tafalla y Pamplona. 
+        </div>
+        
         <div class="footer2">
-            <div> todos los derechos reservados / aviso legal / cookies</div>
+            <div> Todos los derechos reservados. <a href="LEGAL.html">Legal / Política de cookies</a></div>
             <div> Diseñada por cemboelcrack y juan</div>
 
             
@@ -309,6 +372,17 @@ function redirect() {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

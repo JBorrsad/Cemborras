@@ -6,12 +6,6 @@
     <style>
         
 
-        .contacto_Izq_medio {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
         .especialidad-item {
             float: left;
             width: 33%;
@@ -53,21 +47,48 @@
             margin-top: 150px;
         }
         h3{
-            text-align: center;
             margin-bottom: 35px;
+            position: relative;
+            display: block;
         }
         .formulario
         {
-            padding: 10px;
+            padding: 5%;
             align-items: center;
+            text-align: center;
+            width: 100%;
         }
         #mensaje{
             height: 80px;
-            width: 97%;
+            width: 100%;
         }
         .map-map{
             margin-left: 10%;
         }
+        iframe{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .tamanio{
+            width: 100%;
+        }
+        .name {
+            width: 80%;
+        }
+        .name1{
+            margin-left: auto;
+        }
+        .name3{
+            margin-right: auto;
+        }
+        .name2{
+            padding: 0 15px;
+        }
+
+        
+
+        
     </style>
 </head>
 
@@ -90,21 +111,21 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2964501403712!2d-1.676434924178958!3d42.52775702449094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a775c053b4ebd%3A0xa39768078f08129!2sSada%20Borras!5e0!3m2!1sen!2ses!4v1708371656152!5m2!1sen!2ses" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="formulario-item">
+           
             <div class="formulario">
                 <h3>¿Tienes dudas? Contactanos</h3>
                 <table>
                     <tr>
-                            <td><input type="text" name="nombre" id="nombre" placeholder="Nombre" required
-                                    class="tamanio"></input></td>
-                            <td><input type="text" name="email" id="email" placeholder="Email" required
-                                    class="tamanio"></input></td>
-                            <td><input type="text" name="telefono" id="telefono" placeholder="Telefono" required
-                                    class="tamanio"></input></td>
+                            <td><div class="name1"><input type="text" name="nombre" id="nombre" placeholder="Nombre" required
+                                    class="tamanio"></input></div></td>
+                            <td><div class="name2"><input type="text" name="email" id="email" placeholder="Email" required
+                                    class="tamanio"></input></div></td>
+                            <td><div class="name3"><input type="text" name="telefono" id="telefono" placeholder="Telefono" required
+                                    class="tamanio"></input></div></td>
                     </tr>
                     <tr>
                         <td colspan="3"><input type="textarea" name="mensaje" id="mensaje" placeholder="Mensaje"
-                                required class="medio"></input></td>
+                                required class="mensaje"></input></td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -120,7 +141,7 @@
                     </tr>
                 </table>
             </div>
-        </div>
+        
         </div>
     </form>
 </html>
