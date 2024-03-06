@@ -14,7 +14,7 @@
     position: fixed; 
     width: 100%; 
     top: 0; 
-    z-index: 3; 
+    z-index: 13; 
     -webkit-box-shadow: 0px 0px 8px grey; 
 }
 
@@ -27,7 +27,7 @@
     position: fixed;
     width: 100%; 
     top: 20px; 
-    z-index: 2; 
+    z-index: 12; 
     -webkit-box-shadow: 0px 0px 10px grey; 
 }
 
@@ -51,7 +51,7 @@
         }
 
         .menu {
-            z-index: 2;
+            z-index: 12;
             display: block;
             width: 100%;
             position: fixed;
@@ -88,7 +88,7 @@
             cursor:pointer;
         }
 
-.menu2>div:hover>a{  
+.menu2>div:hover>a[href$=".html"]{  
             color:rgb(46 196 182);
         }
 
@@ -108,60 +108,99 @@
         /*Menu Hamburguesa*/
 
 
-        @media only screen and (max-width: 768px)
+        @media only screen and (max-width: 1024px)
         {
             .container > div {
                 width: 100%;
             }
-            .menu{
+            .menu2{
                 display: none;
             }
-            .menu1{
-                display: none;
-            }
+            
             .mobile-container {
-                max-width: 480px;
+              
+                
                 margin: auto;
-                background-color: #555;
-                height: 500px;
-                color: white;
-                border-radius: 10px;
+                background-color: grey;
+                height: 46px;
+                color: black;
+                white-space: nowrap;
+                -webkit-box-shadow: 0px 0px 10px grey; 
+                
               }
               
               .topnav {
                 overflow: hidden;
-                background-color: #333;
-                position: relative;
+                background-color: white;
+                z-index: 11;
+                position: fixed;
+                top: 20px;
+                width: 100%;
+                -webkit-box-shadow: 0px 0px 10px black; 
+                
+               
+            
               }
+
+              
               
               .topnav #myLinks {
                 display: none;
               }
+
+              .icon>img {
+
+                margin-left: 30px;
+              }
               
               .topnav a {
-                color: white;
+                color: black;
+                background-color: white;
+                min-width: 300px;
                 padding: 14px 16px;
                 text-decoration: none;
                 font-size: 17px;
-                display: block;
+                display:flex;
+                
               }
               
               .topnav a.icon {
-                background: black;
+                
                 display: block;
                 position: absolute;
-                right: 0;
+                left: 0;
                 top: 0;
+                width: 30%;
+                height: 20px;
+                
+
               }
               
               .topnav a:hover {
-                background-color: #ddd;
-                color: black;
+                background-color: grey;
+                z-index:12;
+                color: white;
+                width: 30%;
+                min-width: 300px;
+                border:black 1px;
+                
+            
+              }
+
+              .active>img{
+
+                z-index: 13;
               }
               
               .active {
-                background-color: #04AA6D;
-                color: white;
+                
+                color: grey;
+                left: 0;
+                top:0;
+                width: 5%;
+                margin-right: auto;
+                
+                
               }
         }
         @media only screen and (min-width: 728px) and (max-width: 1024px)

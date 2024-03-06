@@ -1,7 +1,8 @@
-body {
-            font-family: Arial, sans-serif;
-            padding: 0;
-            color: #333;
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+            
+            -webkit-font-smoothing:antialiased;
         }
         .container {
             max-width:90%;
@@ -28,6 +29,12 @@ body {
             border-top: 1px solid #ccc;
             padding-top: 20px;
         }
+
+        
+.paginaactual{
+    text-decoration: underline;
+    
+}
         .disclaimer {
             margin-top: 30px;
             padding: 15px;

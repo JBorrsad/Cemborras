@@ -1,5 +1,4 @@
-
- * {
+* {
     font-family: "Inter", sans-serif;
     font-weight: 300;
             
@@ -24,6 +23,12 @@
         max-width: 100%;
         height: auto;
     }
+
+    
+.paginaactual{
+    text-decoration: underline;
+    
+}
     
     .container {
         margin: 0 10%;

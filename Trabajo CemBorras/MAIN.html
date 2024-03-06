@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
     
    <script>
 function redirect() {
@@ -15,7 +16,38 @@ function redirect() {
 
 </head>
 <body style="margin:0">
-    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+ <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active"><img src="IMAGENES/menu.png" width="20" alt=""></a>
+          <div id="myLinks">
+            <a  href="MAIN.html">Inicio</a>
+            <a href="SERVICIOS.html">Servicios</a>
+            <a href="EQUIPO.html">Equipo Humano</a>
+            <a href="INSTALACIONES.html">Instalaciones</a>
+            <a href="CONTACTO_PAMPLONA.html">Contacto</a>
+            <a href="LEGAL.html">Aviso Legal</a>
+
+          </div>
+          <a href="javascript:void(0);" class="icon"  onclick="myFunction()"><img src="IMAGENES/LOGO.png" width="150px"></a>
+            <i class="fa fa-bars"></i>
+          
+        </div>
+
+
+
 
 <div class="menu">
     <div class="menu1">
@@ -37,44 +69,152 @@ function redirect() {
 
     <div class="menu2">
         <div class="logo"><img src="IMAGENES/LOGO.png" alt="LOGO" width="250"></div>
-        <div class="menu-item" onclick="redirect()"><a href="MAIN.html"><b>Inicio</b></a></div>
-        <div class="menu-item" onclick="redirect()"><a href="SERVICIOS.html"><b>Servicios</b></a></div>
-        <div class="menu-item" onclick="redirect()"><a href="EQUIPO.html"><b>Equipo Humano</b></a></div>
-        <div class="menu-item" onclick="redirect()"><a href="INSTALACIONES.html"><b>Instalaciones</b></a></div>
-        <div class="menu-item" onclick="redirect()"><a href="CONTACTO_PAMPLONA.html"><b>Contacto</b></a></div>
-        <div class="menu-item" onclick="redirect()"><a href="LEGAL.html"><b>Legal</b></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="MAIN.html"><div class="paginaactual">Inicio</div></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="SERVICIOS.html">Servicios</a></div>
+        <div class="menu-item" onclick="redirect()"><a href="EQUIPO.html">Equipo Humano</a></div>
+        <div class="menu-item" onclick="redirect()"><a href="INSTALACIONES.html">Instalaciones</a></div>
+        <div class="menu-item" onclick="redirect()"><a href="CONTACTO_PAMPLONA.html">Contacto</a></div>
+        <div class="menu-item" onclick="redirect()"><a href="LEGAL.html">Legal</a></div>
     </div>
 </div>
+
+<div class="body">
 <div class="fondoazul">
 <div class="especialidades">
     <h3>Qué te ofrecemos?</h3>
     <div class="esp">
-        <div class="especialidad-item1"><span class="dot" ></span><img  src="IMAGENES/esp1.png" alt="LOGO" width="80"></span></div>
-        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp2.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp3.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item2"><b>Implantología</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item2"><b>cirugía oral y peridoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item2"><b>Odontopediatría</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp4.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp5.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item1"><span class="dot" ></span><img src="IMAGENES/esp6.png" alt="LOGO" width="80"></div>
-        <div class="especialidad-item2"><b>Rehabilitación respiratoria y masticatoria</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item2"><b>Estética facial</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
-        <div class="especialidad-item2"><b>Ortodoncia</b> <br>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</div>
+        <div class="especialidad-item">
+            <img  src="IMAGENES/esp1.png" alt="LOGO" width="80">
+                <p>Implantología</p>
+                <p>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</p>
+            </div>
+        
+            <div class="especialidad-item">
+                <img  src="IMAGENES/esp1.png" alt="LOGO" width="80">
+                    <p>Implantología</p>
+                    <p>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</p>
+                </div>
+            
+                <div class="especialidad-item">
+                    <img  src="IMAGENES/esp1.png" alt="LOGO" width="80">
+                        <p>Implantología</p>
+                        <p>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</p>
+                    </div>
+                
+                    <div class="especialidad-item">
+                        <img  src="IMAGENES/esp1.png" alt="LOGO" width="80">
+                            <p>Implantología</p>
+                            <p>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</p>
+                        </div>
+                    
+                        <div class="especialidad-item">
+                            <img  src="IMAGENES/esp1.png" alt="LOGO" width="80">
+                                <p>Implantología</p>
+                                <p>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</p>
+                            </div>
+                        
+                            <div class="especialidad-item">
+                                <img  src="IMAGENES/esp1.png" alt="LOGO" width="80">
+                                    <p>Implantología</p>
+                                    <p>Consigue una sonrisa perfecta y corrige problemas oclusivos y de posición dental con nuestros tratamientos personalizados</p>
+                                </div>
+                            
+                                                                                                            
     </div>
-    </div></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="instalaciones">
                         <h3>Hecha un vistazo a nuestras instalaciones</h3>
-                        <img src="IMAGENES/c1.jpeg" height="200px" alt="descripcion de foto">
-                        <img src="IMAGENES/t10.jpeg" height="200px" alt="descripcion de foto">
-                        <!-- /* https://icon-icons.com/es/pack/Dentist/3985 */ -->
+
+
+
+
+
+<a href="INSTALACIONES.html">
+                        <div class="slider-frame">
+                                <ul>
+
+
+                                    <a href="INSTALACIONES.html"><li><img src="IMAGENES/c1.jpeg" alt="Imagen 2"></li></a>
+                                        <a href="INSTALACIONES.html"> <li><img src="IMAGENES/c2.jpeg" alt="Imagen 2"></li></a>
+                                            <a href="INSTALACIONES.html"><li><img src="IMAGENES/c5.jpeg" alt="Imagen 2"></li></a>
+                                                <a href="INSTALACIONES.html"><li><img src="IMAGENES/c8.jpeg" alt="Imagen 2"></li></a>
+                                                    <a href="INSTALACIONES.html"><li><img src="IMAGENES/t8.jpeg" alt="Imagen 2"></li></a>
+                                                        <a href="INSTALACIONES.html"><li><img src="IMAGENES/t10.jpeg" alt="Imagen 2"></li></a>
+                                                            <a href="INSTALACIONES.html"><li><img src="IMAGENES/c1.jpeg" alt="Imagen 2"></li></a>
+                                    
+                                </ul>
+
+                        </div>
+
+                    </a>
+
+
+                              
+                             
+    </div>
+                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                        
             </div>
-            <h3>Aquí nos puedes encontrar</h3>
+           
 
            
            
             <div class="fondoazul">
+                <h3>Aquí nos puedes encontrar</h3>
                         <div class="mapas">
                            <div class="mapaotexto">
                             <div class="texto" ><div class="mapastitulos">CLINICA PAMPLONA</div><div class="mapablank"></div>
@@ -126,11 +266,9 @@ function redirect() {
     </div>
     
 </footer>
-
+</div>
 </body>
 </html>
-
-
 
 
 

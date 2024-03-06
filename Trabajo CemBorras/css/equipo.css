@@ -1,6 +1,4 @@
-
-
- * {
+* {
     font-family: "Inter", sans-serif;
     font-weight: 300;
             
@@ -41,9 +39,19 @@
                 padding-bottom: 50px;
             }
 
-        
+
+            .txthijo:first-letter{
+               font-size: larger;
+            }
 
 
+           
+
+
+            .paginaactual{
+                text-decoration: underline;
+                
+            }
   
 
 
@@ -125,7 +133,7 @@ margin: 0 15%;
     }
 
 
-    img:not(.menu2 img):not(.f1 img):not(.menu1 img) {
+    img:not(.menu2 img):not(.f1 img):not(.menu1 img):not(footer img){
         border-radius: 5%;
         -webkit-box-shadow: 5px 5px 10px rgb(160, 158, 158);
     }
@@ -138,3 +146,20 @@ margin: 0 15%;
 }
 
 
+
+@media only screen and (min-width: 728px) and (max-width: 1024px)
+{
+    table{
+        padding: 0 100px;
+    }
+    .container > div {
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 1024px)
+{
+    .container > div{
+        width: 50%;
+    }
+}
+   

@@ -5,33 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cookies.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Aviso Legal y Política de Cookies</title>
     
 </head>
-<body>
-    <div class="menu">
-        <div class="menu1">
-            <div class="div-item">
-                <img src="IMAGENES/pin.png" width="15">Clinica pamplona
-            </div>
-            <div class="div-item">948 70 20 57</div>
-            <div class="div-item"><img src="IMAGENES/pin.png" width="15">Clinica tafalla</div>
-            <div class="div-item">948 70 20 57</div>
-            <div class="social-media">(facebook) twitter instagram</div>
+<body style="margin:0">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+ <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active"><img src="IMAGENES/menu.png" width="20" alt=""></a>
+          <div id="myLinks">
+            <a href="MAIN.html">Inicio</a>
+            <a href="SERVICIOS.html">Servicios</a>
+            <a href="EQUIPO.html">Equipo Humano</a>
+            <a href="INSTALACIONES.html">Instalaciones</a>
+            <a href="CONTACTO_PAMPLONA.html">Contacto</a>
+            <a href="LEGAL.html"> Aviso Legal</a>
+
+          </div>
+          <a href="javascript:void(0);" class="icon"  onclick="myFunction()"><img src="IMAGENES/LOGO.png" width="150px"></a>
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-    
-        
-    
-        <div class="menu2">
-            <div class="logo"><img src="IMAGENES/LOGO.png" alt="LOGO" width="250"></div>
-            <div class="menu-item" onclick="redirect()"><a href="MAIN.html"><b>Inicio</b></a></div>
-            <div class="menu-item" onclick="redirect()"><a href="SERVICIOS.html"><b>Servicios</b></a></div>
-            <div class="menu-item" onclick="redirect()"><a href="EQUIPO.html"><b>Equipo Humano</b></a></div>
-            <div class="menu-item" onclick="redirect()"><a href="INSTALACIONES.html"><b>Instalaciones</b></a></div>
-            <div class="menu-item" onclick="redirect()"><a href="CONTACTO_PAMPLONA.html"><b>Contacto</b></a></div>
-            <div class="menu-item" onclick="redirect()"><a href="LEGAL.html"><b>Legal</b></a></div>
+
+
+
+
+<div class="menu">
+    <div class="menu1">
+        <div class="div-item">
+            <img src="IMAGENES/location-dot-solid.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clinica pamplona
+        </div>
+        <div class="div-item">948 70 20 57</div>
+        <div class="div-item"><img src="IMAGENES/location-dot-solid.svg" width="10">Clinica tafalla</div>
+        <div class="div-item">948 70 20 57</div>
+        <div class="social-media">
+           <img src="IMAGENES/twitter.svg">
+           <img src="IMAGENES/facebook.svg" width="10">
+           <img src="IMAGENES/instagram.svg">
         </div>
     </div>
+    
+
+    
+
+    <div class="menu2">
+        <div class="logo"><img src="IMAGENES/LOGO.png" alt="LOGO" width="250"></div>
+        <div class="menu-item" onclick="redirect()"><a href="MAIN.html"><b>Inicio</b></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="SERVICIOS.html"><b>Servicios</b></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="EQUIPO.html"><b>Equipo Humano</b></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="INSTALACIONES.html"><b>Instalaciones</b></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="CONTACTO_PAMPLONA.html"><b>Contacto</b></a></div>
+        <div class="menu-item" onclick="redirect()"><a href="LEGAL.html"><b><div class="paginaactual">Legal</div></b></a></div>
+    </div>
+</div>
     
     <div class="container">
         <h1>Aviso Legal y Política de Cookies</h1>
@@ -64,6 +103,23 @@
         </div>
     </div>
 
+    <footer >
+        <div class="blank-footer"></div>
+        <div class="footer">
+            <div class="footer1">
+    <img src="IMAGENES/logofooter.png" height="40px">
+                <br>Al servicio de todas sus necesidades dentales en Tafalla y Pamplona. 
+            </div>
+            
+            <div class="footer2">
+                <div> Todos los derechos reservados. <a href="LEGAL.html">Legal / Política de cookies</a></div>
+                <div> Diseñada por cemboelcrack y juan</div>
+    
+                
+            </div> 
+        </div>
+        
+    </footer>
 </body>
 
 </html>

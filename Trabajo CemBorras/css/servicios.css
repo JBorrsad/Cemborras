@@ -21,6 +21,11 @@
     color: #fff;
 }
 
+
+.paginaactual{
+    text-decoration: underline;
+    
+}
         .images {
             width: 40px;
             height: 40px;
@@ -73,3 +78,8 @@
             max-width: 1500px;
             margin: auto;
         }
+
+
+        .texto:first-line {font-style:italic;}
+
+        .texto:first-letter {font-size: 30px;}
