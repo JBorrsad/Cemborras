@@ -43,8 +43,17 @@
         transition: transform 0.2s; 
     }
     
-    img:hover:not(.menu2 img) {
+    img:hover:not(.menu2 img , .footer1 img) {
         transform: scale(1.4); 
+    }
+    .pamplona{
+        width: 100% !important;
+    }
+    .tafalla{
+        width: 100% !important;
+    }
+    .footer1 > img{
+            height: 40px;
     }
     
 

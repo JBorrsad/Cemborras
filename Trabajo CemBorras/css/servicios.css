@@ -75,7 +75,7 @@
         }
 
         .container {
-            max-width: 1500px;
+            max-width: 90%;
             margin: auto;
         }
 
@@ -83,3 +83,16 @@
         .texto:first-line {font-style:italic;}
 
         .texto:first-letter {font-size: 30px;}
+
+
+
+        .a{
+            width: 100% !important;
+        }
+
+        @media only screen and (max-width: 1024px)
+        {
+            .container{
+                margin-top: 110px;
+            }
+        }
