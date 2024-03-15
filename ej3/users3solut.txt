@@ -1,9 +1,0 @@
-
-
-
- Muestra nombres de módulos del ciclo SMR:
-//modulo[ciclo="SMR"]/nombre/text()
-
-Nombres de ciclo con el módulo "Lenguajes de marcas y sistemas de gestión de información":
-
-//ciclo[@id=(//modulo[nombre = 'Lenguajes de marcas y sistemas de gestión de información']/ciclo)]/nombre
