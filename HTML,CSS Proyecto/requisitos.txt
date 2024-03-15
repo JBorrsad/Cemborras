@@ -1,0 +1,16 @@
+selectores id:
+(iñigo) contactopamplona formulario
+
+selector atributo:
+	en el menu: .menu2>div:hover>a[href$=".html"]{  
+            color:rgb(46 196 182);
+        }
+
+combinadores de hijo: a patadas
+
+combinador descendientes: a patadas
+
+
+pseudoclases: a patadas
+
+pseudoelementos. en los textos de equipo y servicios

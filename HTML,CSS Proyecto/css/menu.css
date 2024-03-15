@@ -1,0 +1,224 @@
+
+* {
+    font-family: "Inter", sans-serif;
+    
+            
+            -webkit-font-smoothing:antialiased;
+        }
+
+ .menu1 {
+    background-color: rgb(46 196 181);
+    display: flex;
+    align-items: center;
+    height: 20px;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 13; 
+    -webkit-box-shadow: 0px 0px 8px grey; 
+}
+
+
+.menu2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: 100%; 
+    top: 20px; 
+    z-index: 12; 
+    -webkit-box-shadow: 0px 0px 10px grey; 
+}
+
+.menu1 > .div-item {
+            margin-right: 5%;
+        }
+	
+ .menu2 > div:first-child {
+            margin-left: 10%;
+            margin-right:30%
+        }
+
+
+
+        .menu1 > div:last-child {
+            margin-left: auto;
+        }
+
+        .menu1 > div:first-child {
+            margin-left: 10%;
+        }
+
+        .menu {
+            z-index: 12;
+            display: block;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            
+            
+        }
+
+   .menu2 > div:not(:first-child) {
+            
+            border-color: rgb(228, 228, 228);
+            border-left: 1px solid rgb(228, 228, 228);
+            
+            }
+
+        .menu2>div:last-child{
+            
+            border-color: rgb(228, 228, 228);
+            border-right: 1px solid rgb(228, 228, 228);
+            
+
+        }
+
+.menu2> div>a{
+            color:black;
+            text-decoration: none;
+        }
+
+ .menu2>div:hover:not(:first-child){  
+            background-color: rgb(221, 221, 221);
+            padding-top: auto;
+            padding-bottom: auto;
+            cursor:pointer;
+        }
+
+.menu2>div:hover>a[href$=".html"]{  
+            color:rgb(46 196 182);
+        }
+
+ .menu-item {
+            padding: 20px 15px 22px 15px;
+            
+            
+        }
+
+        .menu-item a {
+                white-space: nowrap;
+        }
+
+
+
+
+        /*Menu Hamburguesa*/
+
+
+        @media only screen and (max-width: 1024px)
+        {
+            .container > div {
+                width: 100%;
+            }
+            .menu2{
+                display: none;
+            }
+            
+            .mobile-container {
+              
+                
+                margin: auto;
+                background-color: grey;
+                height: 46px;
+                color: black;
+                white-space: nowrap;
+                -webkit-box-shadow: 0px 0px 10px grey; 
+                
+              }
+              
+              .topnav {
+                overflow: hidden;
+                background-color: white;
+                z-index: 11;
+                position: fixed;
+                top: 20px;
+                width: 100%;
+                -webkit-box-shadow: 0px 0px 10px black; 
+                
+               
+            
+              }
+
+              
+              
+              .topnav #myLinks {
+                display: none;
+              }
+
+              .icon>img {
+
+                margin-left: 30px;
+              }
+              
+              .topnav a {
+                color: black;
+                background-color: white;
+                min-width: 300px;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display:flex;
+                
+              }
+              
+              .topnav a.icon {
+                
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30%;
+                height: 20px;
+                
+
+              }
+              
+              .topnav a:hover {
+                background-color: grey;
+                z-index:12;
+                color: white;
+                width: 30%;
+                min-width: 300px;
+                border:black 1px;
+                
+            
+              }
+
+              .active>img{
+
+                z-index: 13;
+              }
+              
+              .active {
+                
+                color: grey;
+                left: 0;
+                top:0;
+                width: 5%;
+                margin-right: auto;
+                
+                
+              }
+        }
+        @media only screen and (min-width: 728px) and (max-width: 1024px)
+        {
+            table{
+                padding: 0 100px;
+            }
+            .container > div {
+                width: 75%;
+            }
+        }
+        @media only screen and (min-width: 1024px)
+        {
+            .container > div{
+                width: 50%;
+            }
+        }
+           
+
+
+

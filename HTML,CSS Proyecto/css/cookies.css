@@ -1,0 +1,73 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+            
+            -webkit-font-smoothing:antialiased;
+        }
+        .container {
+            margin:5%;
+            margin-top: 120px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .respo {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        
+.paginaactual{
+    text-decoration: underline;
+    
+}
+        .disclaimer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: aquamarine;
+            border-left: 5px solid rgb(46 196 182);
+            width: 98% !important;
+        }
+        .disclaimer p {
+            margin: 0;
+        }
+        .cookie-notice {
+            background-color: aquamarine;
+            padding: 15px;
+            margin-top: 30px;
+            border-left: 5px solid rgb(46 196 182);
+            width: 98% !important;
+        }
+        .cookie-notice p {
+            margin: 0;
+        }
+        
+
+        
+        .respo{
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: aquamarine;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 40px 40px 40px 40px;
+            width: 95% !important;
+        }
+
+        .cookie-notice > *{
+            width: 100% !important;
+        }
+        

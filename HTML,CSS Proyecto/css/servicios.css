@@ -1,0 +1,98 @@
+    
+
+        
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+            
+            -webkit-font-smoothing:antialiased;
+        }
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        header h1 {
+    color: #fff;
+}
+
+
+.paginaactual{
+    text-decoration: underline;
+    
+}
+        .images {
+            width: 40px;
+            height: 40px;
+            margin-right: 30px;
+        }
+
+        div h2 {
+            font-size: 26px;
+        }
+
+        .a {
+            border-style: solid;
+            border-width: 1px;
+            border-color: aquamarine;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        h1, .contact h2, .service h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p, .service p, .contact p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .service {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .contact {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+       
+
+        .images1, .texto {
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: auto;
+        }
+
+
+        .texto:first-line {font-style:italic;}
+
+        .texto:first-letter {font-size: 30px;}
+
+
+
+        .a{
+            width: 100% !important;
+        }
+
+        @media only screen and (max-width: 1024px)
+        {
+            .container{
+                margin-top: 110px;
+            }
+        }

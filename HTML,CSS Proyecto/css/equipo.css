@@ -1,0 +1,165 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+            
+            -webkit-font-smoothing:antialiased;
+        }
+
+
+        h3{
+            color: darkblue;
+            font-size: 40px;
+            
+    
+            text-align: left;
+           
+        }
+            
+        
+        .t1{
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+
+        .t2{
+            font-size: 20px;
+            padding-bottom: 20px;
+            color: rgb(46 196 182);
+        }
+
+        .equipotitulo{
+           
+            font-size: 25px;
+            padding-bottom: 5px;
+            padding-top: 30px;
+            }
+
+            .equiposubtitulo{
+                
+                padding-bottom: 50px;
+            }
+
+
+            .txthijo:first-letter{
+               font-size: larger;
+            }
+
+
+           
+
+
+            .paginaactual{
+                text-decoration: underline;
+                
+            }
+  
+
+
+.f1 {
+    padding-right:30%;
+    padding-left: 30%;
+    text-align: center;
+    padding-bottom: 50px;
+    
+    }
+
+    .contenedor, .contenedorfotos{
+margin: 0 15%;
+
+    }
+
+
+
+    .todoequipo>:nth-child(odd){
+    background-color: rgb( 241 255 254);
+
+    }
+
+    .contenedor> div:first-child{
+    margin-right: auto;
+    }
+
+
+    .contenedor{
+        align-items: center;
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .txt{
+        text-align:left;
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+
+    }
+
+    .pilar{
+        
+       
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    
+    .fotopilar{
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    
+    .fotositem{
+        float: left;
+        
+        width: 33%;
+        
+        overflow:hidden;
+        text-align: center;
+    }
+
+
+
+
+    .txthijo{
+   
+        margin-bottom:15px;
+        text-align: left;
+        width: 100%;
+        line-height: 1.5; 
+        color:grey;
+    }
+
+
+    img:not(.menu2 img):not(.f1 img):not(.menu1 img):not(footer img){
+        border-radius: 5%;
+        -webkit-box-shadow: 5px 5px 10px rgb(160, 158, 158);
+    }
+
+
+    .todoequipo{
+    margin-top: 400px;
+    width: auto;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 728px) and (max-width: 1024px)
+{
+    table{
+        padding: 0 100px;
+    }
+    .container > div {
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 1024px)
+{
+    .container > div{
+        width: 50%;
+    }
+}
+   
